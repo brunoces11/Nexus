@@ -1,0 +1,177 @@
+# PLANO NEXUS
+## Briefing mestre do conceito e da interface
+Atualizado em 04/11/2026
+
+## 1. Decisão central e fase atual
+
+O NEXUS é uma plataforma de conhecimento empresarial e coordenação do trabalho humano com agentes de IA. O resultado buscado agora é o conceito de produto traduzido em uma interface visual convincente. Esta fase não inclui integração, provisionamento de nuvem, backend, pipelines, execução real de agentes nem validação técnica. Decisões de implementação virão depois.
+
+A interface deve permitir que um gestor compreenda e organize quatro domínios: dados e conhecimento; pessoas; agentes; rotinas e tarefas. Um canvas no-code conecta esses domínios. O usuário acompanha a operação num Kanban ampliado por registros de trabalho humano e de agentes, e conversa com a IA sobre o que aconteceu, com contexto e evidências.
+
+Resultado esperado da fase: arquitetura da informação, fluxos de navegação, estados e telas, linguagem visual, dados demonstrativos coerentes e protótipo de interface. Qualquer interação representada nessa fase é conceitual até que seja implementada.
+
+## 2. Origem do conceito
+
+O vídeo https://www.youtube.com/watch?v=XwEbK3JX5mc, analisado pela transcrição fornecida pelo usuário, mostra um sistema pessoal de informações relacionadas, visões de rotina, coleta automatizada e interação com IA. Sua contribuição para o NEXUS é conceitual: dar estrutura estável ao contexto, distinguir dados humanos de saídas da máquina, transformar coleta em informação útil, apresentar o trabalho visualmente e permitir um ponto único de interação.
+
+No NEXUS, a organização pessoal vira organização empresarial multiusuário. Pastas por assunto viram áreas, processos e visões. A separação humano/máquina vira autoria, proveniência e estado de validação. Rotinas de coleta viram fontes e pré-processamentos específicos. A visão do dia vira gestão operacional. Os sistemas especializados viram agentes e skills. A interface não deve reproduzir Obsidian nem depender das tecnologias locais usadas pelo autor do vídeo.
+
+A referência visual do canvas é o LangFlow, especificamente sua composição por componentes, portas e conexões no espaço de trabalho. O NEXUS precisa de linguagem própria, mais leve e focada na gestão empresarial; não pretende copiar o editor funcional do LangFlow. A documentação do LangFlow descreve o editor visual e seus componentes em https://docs.langflow.org/concepts-overview e https://docs.langflow.org/components/.
+
+Os prints do vídeo mencionados pelo usuário ainda não foram anexados nesta conversa. Quando chegarem, podem refinar composição, densidade, navegação e hierarquia visual sem alterar as decisões centrais deste briefing.
+
+## 3. Promessa do produto
+
+O gestor vê quem faz o quê, qual agente foi usado, quais dados deram suporte ao trabalho, o que foi descoberto, o que foi entregue e onde existem pendências. Pode montar visualmente relações entre pessoas, agentes, conhecimentos e rotinas; acompanhar tarefas; investigar resultados; conversar com o agente vinculado a uma execução; e comparar a exploração feita com a entrega do funcionário.
+
+O funcionário recebe tarefas, utiliza agentes autorizados, consulta conhecimento pertinente e registra entregas. A diretoria obtém visão transversal autorizada sobre atividades, resultados, riscos e decisões.
+
+O diferencial não é apenas um chatbot com documentos, um gerenciador de tarefas ou um editor de fluxos. É a conexão visível entre estrutura de trabalho, conhecimento empresarial, ações humanas e ações dos agentes.
+
+## 4. Estrutura principal da interface
+
+A navegação de primeiro nível tem quatro áreas de gestão e um espaço de orquestração:
+
+1. Dados e conhecimento: fontes, conjuntos de dados, documentos, qualidade, proveniência, entidades e relações. Oferece uma visão comum em listas e detalhes, além de uma tela específica de grafo. O usuário não precisa operar o banco por linguagem de consulta.
+2. Pessoas: funcionários, equipes, departamentos, funções, atribuições, carga de trabalho e agentes disponíveis a cada pessoa.
+3. Agentes e skills: catálogo, finalidade, capacidades, ferramentas, escopo de conhecimento, usuários habilitados, configurações conceituais e histórico de execuções.
+4. Rotinas e tarefas: processos recorrentes, tarefas, responsáveis, prazos, estados, dependências, entregas e acompanhamento.
+5. Canvas de conexões: área central para montar e inspecionar como os quatro domínios se relacionam.
+
+Uma página inicial reúne visão executiva, pendências, agentes em atividade, tarefas críticas e um campo de conversa com a IA. O canvas é o ponto de composição; o Kanban é o ponto de acompanhamento. Cada área tem páginas de lista e detalhe apropriadas. A visualização do grafo de conhecimento é uma tela própria e não deve invadir todas as telas.
+
+## 5. Canvas no-code: gramática do produto
+
+O gestor arrasta elementos de uma biblioteca lateral para o canvas, organiza os nós e desenha conexões. O painel direito mostra propriedades, descrição da conexão, alcance e efeitos previstos. O canvas deve distinguir estrutura organizacional, acesso e fluxo de trabalho para que uma linha não tenha significado ambíguo.
+
+Tipos iniciais de nó:
+- Pessoa ou equipe: quem pode receber trabalho ou usar capacidades.
+- Agente: assistente configurável para uma finalidade.
+- Skill ou ferramenta: capacidade disponibilizada ao agente.
+- Base ou fonte de conhecimento: conjunto de dados que um agente pode consultar.
+- Rotina ou tarefa: trabalho acionado, atribuído ou acompanhado.
+- Saída ou revisão: resultado esperado e ponto de supervisão humana, quando necessário.
+
+Conexões com verbos visíveis:
+- Pessoa USA Agente.
+- Agente CONSULTA Base.
+- Agente UTILIZA Skill.
+- Pessoa RECEBE Tarefa.
+- Rotina ACIONA Agente ou Tarefa.
+- Agente PRODUZ Saída.
+- Pessoa REVISA Saída.
+
+Exemplo de composição: arrastar “Ana”, “Agente de Pesquisa”, “Base de Contratos” e “Análise de fornecedor”; ligar Ana ao agente, o agente à base e a tarefa à Ana. O canvas mostra, em linguagem simples, que Ana pode usar aquele agente para o trabalho designado e que a pesquisa do agente está delimitada à base selecionada.
+
+Estados de UX: rascunho, conexão incompleta, conflito ou falta de acesso, pronto para revisão, publicado, pausado. Antes de publicar, uma prévia textual resume quem terá acesso a quê e qual rotina será afetada. Desfazer, histórico de mudanças, busca de nós, zoom e agrupamento são diretrizes da experiência. O canvas não é a visualização do grafo de conhecimento: ele representa regras, atribuições e fluxos configurados pelo gestor; o grafo de conhecimento representa fatos e relações extraídos ou registrados sobre a empresa.
+
+O desenho de uma conexão expressa uma intenção de configuração, não uma concessão automática e irrestrita de permissão. A interface deve tornar visíveis limites, responsáveis e estados de aprovação.
+
+## 6. Kanban ampliado: pessoas e agentes na mesma tarefa
+
+O Kanban mostra colunas adequadas ao processo, como Entrada, Planejado, Em andamento, Aguardando agente, Em revisão e Concluído. O conteúdo principal de cada cartão é a tarefa, com responsável humano, agentes envolvidos, prazo, prioridade, último evento e evidências. Estados e colunas são configuráveis por rotina.
+
+Ao abrir um cartão, o gestor encontra uma linha do tempo unificada:
+1. Solicitação e contexto original da tarefa.
+2. Atribuição e alterações feitas por pessoas.
+3. Agentes invocados, por quem, quando e para quê.
+4. Conversas e pesquisas exploratórias vinculadas à tarefa.
+5. Dados, documentos ou relações consultados, com origem.
+6. Saídas intermediárias, decisões e revisões.
+7. Entrega final do funcionário e comparação com o material produzido pelo agente.
+
+Essa visão permite detectar descobertas relevantes que apareceram na exploração com IA e não foram incluídas na entrega final. A comparação deve indicar diferenças e referências concretas, sem atribuir automaticamente erro ao funcionário. O gestor pode marcar um achado, pedir complemento ou incorporar o contexto à tarefa.
+
+Métricas do painel: tarefas por etapa e responsável, uso de agentes por equipe e por agente, execuções concluídas ou com falha, tempo de ciclo, revisões pendentes e resultados. Métricas de produtividade devem ser interpretáveis no contexto do trabalho, sem transformar volume de mensagens em medida de desempenho.
+
+## 7. Conversas com agentes e supervisão do gestor
+
+O gestor pode abrir, quando autorizado, o histórico de conversa do funcionário com o agente no contexto de uma tarefa. Pode consultar a sequência exploratória, resultados, fontes utilizadas e pontos descartados. Também pode iniciar uma nova conversa com o mesmo agente sobre aquela execução: “O que foi apurado?”, “Quais fontes sustentaram esta conclusão?”, “O que ficou fora da entrega?”, “Há hipóteses não verificadas?”.
+
+A nova conversa deve estar explicitamente vinculada ao registro da execução e às fontes recuperáveis. Não deve fingir que é uma continuação privada da conversa do funcionário ou que o agente se lembra de algo que não foi registrado. A resposta precisa separar evidência, inferência e ausência de informação. O gestor pode anotar, solicitar revisão e comparar resposta do agente com a entrega humana.
+
+Como princípio de produto, acesso às conversas é delimitado por função, equipe, tarefa e política da empresa, com transparência para os participantes e trilha de acesso. Conteúdos pessoais, confidenciais ou de outras áreas não se tornam visíveis apenas pelo cargo de gestor. Essas regras são parte da experiência e da confiança do sistema.
+
+## 8. Dados, conhecimento e grafo
+
+O conceito de conhecimento tem três camadas visíveis: fonte original, representação organizada e relações entre entidades. A área de dados permite ver entradas, estado de processamento, versão, qualidade, responsável, classificação de sensibilidade e onde cada informação é utilizada. O gestor pode navegar em listas, filtros, detalhes e busca; a tela de grafo serve para explorar conexões, dependências e proveniência.
+
+O grafo não é decoração. Exemplos de nós: pessoa, departamento, projeto, tarefa, documento, contrato, fornecedor, agente, execução e decisão. Exemplos de relações: responsável por, participa de, depende de, consultou, produziu, revisou e fundamentado por. Ao selecionar uma relação, a interface mostra seu significado e sua origem.
+
+A arquitetura conceitual futura privilegia Spanner com Spanner Graph como memória central, combinando dados tabulares, relações de grafo e, quando útil, embeddings na mesma base. RAG e GraphRAG são modos de recuperar contexto para a IA, não bancos adicionais. Arquivos originais extensos podem ter armazenamento de objetos, mantendo vínculos e metadados no Spanner. Vertex AI sustenta geração, interpretação e agentes. Nenhuma dessas integrações faz parte da entrega desta fase de interface.
+
+Dados estruturados não precisam ser convertidos indiscriminadamente em vetores. Pré-processadores específicos aplicarão regras de negócio, limpeza, validação, classificação e extração antes de criar conhecimento derivado. Fontes, autoria, carimbo temporal e distinção entre fato, inferência e conteúdo aprovado por humanos devem estar previstos no conceito.
+
+Referências técnicas para fase futura: https://docs.cloud.google.com/spanner/docs/graph/overview ; https://docs.cloud.google.com/spanner/docs/vector-search-overview ; https://docs.cloud.google.com/architecture/gen-ai-graphrag-spanner .
+
+## 9. Agentes e rotinas
+
+O gestor configura, na interface conceitual, agentes com nome, propósito, instruções, skills, fontes autorizadas, usuários ou equipes habilitados e contexto de execução. Pode designar um agente a pessoas ou rotinas pelo canvas e inspecionar todas as conexões do agente em sua página de detalhe. O uso é sempre associado a uma pessoa, tarefa ou rotina para preservar responsabilidade.
+
+Uma rotina descreve gatilho, frequência ou condição, responsáveis, etapas, agentes envolvidos, saídas e pontos de revisão. Exemplo demonstrativo: mensagens entram; regras e IA as classificam; um caso crítico vira tarefa; um funcionário usa um agente para investigar; a gestão acompanha no Kanban e consulta o histórico.
+
+O produto deve mostrar claramente a diferença entre agente disponível, agente em execução, execução concluída e resultado aprovado. A gestão de agentes inclui uso e resultados, não apenas criação de assistentes.
+
+## 10. Direção visual e layout
+
+### Princípio visual
+
+Usar as imagens anexadas como referência estética: interface escura e futurística, composição minimalista, linhas finas, nós conectados, painéis sobrepostos e brilho neon controlado. A base visual passa a ser carvão, azul-marinho e petróleo; texto branco e cinza claro; superfícies com transparência e efeito glass em camadas selecionadas. Esta direção substitui o branco dominante descrito anteriormente. As imagens servem como referência de linguagem visual, sem importar seus textos, marcas ou produtos.
+
+### Superfícies, transparência e profundidade
+
+- Criar profundidade com camadas: fundo escuro, superfície principal, painel flutuante e popover contextual, cada um distinguido por leve variação de tom, transparência, borda e sombra.
+- Aplicar glassmorphism com parcimônia em inspetores, diálogos, painéis de conversa e controles flutuantes. Usar transparência e desfoque para separar planos, mantendo texto e dados sobre superfícies suficientemente sólidas e legíveis.
+- Usar contornos finos azulados ou cinza, cantos moderados, sombra difusa e reflexos discretos nas bordas. Evitar excesso de brilho, transparência simultânea em todos os componentes e aparência de vidro espesso.
+- Permitir imagens atmosféricas em banners ou cabeçalhos de algumas páginas, como na referência do painel de atividades. Aplicar gradiente escuro sobre a imagem para preservar contraste e deixar os registros operacionais como foco. Não usar imagens como textura de fundo do canvas nem atrás de tabelas densas.
+
+### Linhas, nós e luz
+
+- Canvas e exploração do grafo usam uma superfície escura com grade ou pontilhado sutil. Nós têm desenho compacto, identificação clara, ícone linear e estados visíveis.
+- Conexões são curvas suaves, estreitas e com terminais definidos. Em estado inativo, permanecem discretas; ao selecionar, configurar ou executar, acendem com neon sutil e podem exibir um pulso de luz curto que percorre o fio.
+- Usar azul elétrico ou ciano como luz principal. Violeta e magenta podem marcar componentes ou relações específicas; verde indica sucesso e laranja indica atenção. Limitar cores por tela e sempre acompanhar cores com rótulos, ícones ou formas.
+- Usar animação somente para comunicar ligação, atividade ou mudança de estado. Evitar movimento contínuo decorativo e respeitar redução de movimento.
+- O brilho pertence a pontos de interação e conexões relevantes; não deve competir com leitura, evidências ou conteúdo.
+
+### Layout e variação por tela
+
+- Navegação lateral estável e enxuta; barra superior para título, contexto, busca e ações da página.
+- Região central ampla, mudando conforme a tarefa: canvas no editor no-code, colunas no Kanban, tabela em gestão de dados e pessoas, grafo na exploração relacional.
+- Painel lateral contextual em formato de overlay para propriedades do nó, evidências, atividade ou conversa. Deve poder abrir e fechar sem retirar o usuário do canvas ou tarefa atual.
+- No editor, usar referências visuais do LangFlow: espaço de trabalho amplo, componentes conectáveis e painel auxiliar. A aparência deve ser mais silenciosa, organizada e adequada a gestores.
+- Em telas de atividade, filtros em chips compactos, grupos temporais e cartões de eventos sobre fundo escuro. Reservar o banner com imagem para o cabeçalho e manter os registros em superfícies de alto contraste.
+- No Kanban, separar colunas com sutileza, priorizar leitura rápida dos cartões e mostrar estados humanos e de agentes com badges concisos. A linha do tempo detalhada abre na tarefa.
+- Em dados e pessoas, manter tabelas e formulários predominantemente opacos, com divisórias finas e hierarquia tipográfica clara; efeitos de vidro não devem dificultar leitura de muitos campos.
+- Em telas menores, converter painéis laterais em gavetas e preservar o foco no conteúdo principal.
+
+### Tipografia e acabamento
+
+Tipografia sem serifa, clara e contemporânea; títulos curtos, hierarquia consistente e textos auxiliares compactos. Ícones lineares e simples. Botões, chips e badges usam contornos discretos e estados de foco evidentes. A interface deve parecer precisa e elegante, evitando estética de jogo, excesso de gradientes, cores saturadas em grandes áreas e decoração sem função.
+
+Manter contraste adequado, navegação por teclado e foco visível. Transparência, luz e animações são recursos de hierarquia e feedback; nunca podem ser necessários para compreender o significado de um dado ou estado.
+
+## 11. Telas conceituais prioritárias
+
+1. Início executivo: resumo de atividades, alertas, tarefas e agentes, com conversa contextual.
+2. Canvas de conexões: composição no-code com biblioteca de pessoas, agentes, dados e rotinas.
+3. Kanban operacional: tarefas com identidade humana e atividade dos agentes.
+4. Detalhe de tarefa: linha do tempo, conversas, evidências e comparação entre saída do agente e entrega humana.
+5. Dados e conhecimento: fontes e bases em lista, detalhe e estado.
+6. Exploração do grafo: relações e proveniência numa tela dedicada.
+7. Pessoas: equipe, papéis, tarefas e agentes habilitados.
+8. Agentes: catálogo, configuração conceitual, conexões e execuções.
+9. Rotinas: processos, gatilhos, responsáveis e etapas.
+
+A primeira sequência de prototipação deve demonstrar uma jornada completa de gestão: criar ou inspecionar uma conexão no canvas, atribuir uma tarefa, acompanhar pessoa e agente no Kanban, abrir a conversa e as evidências, comparar o resultado e fazer uma pergunta gerencial à IA.
+
+## 12. Limites e decisões futuras
+
+Nesta fase, não ensinar a montar Google Cloud, contratar serviços, criar infraestrutura, conectar fontes reais nem escrever código de backend. O trabalho é conceitual e visual. Não apresentar telas demonstrativas como se operassem de fato.
+
+Ficam para decisões posteriores: processo empresarial específico da demonstração; dados de exemplo; níveis exatos de acesso a conversas; critérios de aprovação de ações; modelos e runtime de agentes; granularidade de permissões; capacidade de busca; custo e edição do Spanner Graph. Essas decisões devem ser tomadas para servir à jornada da interface, sem bloquear sua concepção agora.
+
+Ideias da versão anterior do Nexus mantidas como opções, sem prioridade definida: catálogo de agentes por departamento, upload manual, monitoramento avançado de custo e latência, integrações amplas com fontes, temas visuais alternativos e serviços vetoriais separados. A direção atual fixa Spanner Graph como referência do conceito e coloca a gestão operacional no centro da experiência.
+
+## 13. Critérios de coerência do briefing
+
+O conceito estará bem representado se alguém conseguir, apenas pela interface, responder: que dados existem; quem pode utilizá-los; quais agentes estão disponíveis; como pessoas, agentes, dados e rotinas se conectam; quem está fazendo cada tarefa; o que o agente fez; o que o funcionário entregou; quais evidências sustentam as conclusões; e como o gestor pode investigar uma diferença ou pedir continuidade.

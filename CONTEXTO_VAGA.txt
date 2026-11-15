@@ -1,0 +1,159 @@
+
+# CONTEXTO GERAL DO PROJETO
+# Oportunidade profissional e preparação técnica
+## Preparação estratégica e técnica para oportunidade profissional em IA Generativa
+
+---
+
+# 1. CONTEXTO HISTÓRICO: OPORTUNIDADE PROFISSIONAL
+
+O projeto surgiu a partir de uma oportunidade profissional recebida por Bruno Cesar através de Jéssica Pascoal, Tech Recruiter da HVAR, consultoria especializada em Dados e Inteligência Artificial.
+
+A oportunidade é para atuar em um cliente do setor de energia, em uma posição estratégica de IA Generativa, com atuação direta em parceria com a diretoria de negócios estratégicos de IA.
+
+O cargo apresentado é:
+
+**Tech Lead AI Machine Learning**
+
+A posição chamou a atenção por estar diretamente relacionada à experiência e à área de atuação de Bruno, especialmente em:
+
+- Arquitetura de soluções de Inteligência Artificial.
+- IA Generativa e LLMs.
+- Prompt Engineering e Context Engineering.
+- Arquiteturas RAG e GraphRAG.
+- Knowledge Engineering e Knowledge Graphs.
+- Desenvolvimento e arquitetura de agentes de IA.
+- Construção de provas de conceito (PoCs).
+- Definição de arquiteturas e direcionamento técnico.
+- Tradução de necessidades de negócio em soluções tecnicamente viáveis.
+- Comunicação e apresentação de soluções para lideranças executivas.
+
+A característica mais importante da oportunidade é que não se trata de uma posição cujo foco principal seja o desenvolvimento de código no dia a dia.
+
+A empresa procura uma referência técnica capaz de trabalhar diretamente com a liderança estratégica de IA, participar da concepção das soluções, definir arquiteturas, avaliar possibilidades tecnológicas, construir PoCs e direcionar os times técnicos responsáveis pela implementação.
+
+O conhecimento de Google Cloud Platform (GCP), especialmente Vertex AI, é um dos requisitos tecnológicos explicitamente mencionados.
+
+A seguir está a descrição integral da oportunidade recebida da recrutadora, preservada exatamente como apresentada originalmente.
+
+---
+
+# 2. DESCRIÇÃO INTEGRAL DA VAGA — TEXTO ORIGINAL
+
+Oportunidade HVAR | Tech Lead AI Machine Learning
+
+Olá, Bruno! Tudo bem?
+
+Meu nome é Jéssica e faço parte do time de Recrutamento & Seleção da HVAR, uma consultoria especializada em Dados e Inteligência Artificial.
+
+Estamos trabalhando em uma oportunidade para atuar em um cliente do setor de energia, em uma posição estratégica de IA Generativa, com atuação direta em parceria com a diretoria de negócios estratégicos de IA.
+
+A posição tem foco no desenho de soluções de Inteligência Artificial, construção de PoCs, definição de arquiteturas e direcionamento técnico para a área. Buscamos alguém que seja uma referência técnica, capaz de traduzir as necessidades do negócio em soluções viáveis, apoiar as decisões estratégicas do diretor e direcionar os times técnicos responsáveis pela implementação, sem ter como foco principal o desenvolvimento de código no dia a dia.
+
+É importante ter conhecimento sólido em IA Generativa e LLMs, experiência com GCP, especialmente Vertex AI, além de familiaridade com modelos como Gemini, Claude e OpenAI, arquiteturas de RAG e agentes de IA. Também são essenciais visão de arquitetura, boa comunicação e capacidade de apresentar soluções para lideranças executivas.
+
+Caso tenha interesse em conhecer melhor a oportunidade, poderia me informar:
+
+- Você possui experiência com arquitetura de soluções de IA Generativa, LLMs e GCP, especialmente Vertex AI, atuando no desenho de soluções e direcionamento técnico de times?
+- Você possui disponibilidade para atuar no modelo híbrido, de 2 a 3 vezes por semana, na região de Botafogo, no Rio de Janeiro?
+- Qual a sua pretensão salarial considerando o modelo PJ?
+- Qual número de telefone para contato?
+- Qual o melhor e-mail para contato?
+
+Fico no aguardo do seu retorno. Obrigada! :)
+
+Jéssica Pascoal
+Tech Recruiter | Talent Acquisition | Human Resources | Business Partner | Candidate Experience | Onboarding | Estudante de Psicologia
+
+---
+
+# 3. RESPOSTA ENVIADA À RECRUTADORA
+
+Bruno demonstrou interesse na oportunidade e informou que a posição está alinhada com sua área de atuação e expertise.
+
+A resposta enviada foi:
+
+Boa noite, Jéssica!
+
+Primeiramente, obrigado pelo contato e pela oportunidade. Achei a posição bastante interessante, pois está bem alinhada com minha área de atuação e expertise.
+
+Seguem abaixo as informações solicitadas:
+
+1. Sim, possuo experiência com todas as tecnologias mencionadas.
+2. Sim, tenho disponibilidade para atuar no modelo híbrido em Botafogo.
+3. Pretensão salarial (PJ): R$ 16.780,00.
+4. Telefone: (21) 99997-3045.
+5. E-mail: bruno@criativai.site.
+
+Fico desde já à disposição para avançarmos para as próximas etapas.
+
+Mais uma vez, obrigado e boa noite!
+
+A intenção agora é se preparar para uma possível conversa técnica com a recrutadora e, posteriormente, com o diretor responsável pela área estratégica de IA.
+
+O objetivo não é apenas estudar Vertex AI teoricamente, mas demonstrar capacidade prática de conceber e estruturar uma solução empresarial utilizando o ecossistema Google Cloud.
+
+---
+
+# 4. CONTEXTO TÉCNICO: O QUE PRECISAMOS DOMINAR SOBRE VERTEX AI
+
+Durante a análise da oportunidade, identificamos que Vertex AI é um dos principais pontos de atenção para a preparação técnica.
+
+A interpretação inicial era de que Vertex AI seria basicamente uma plataforma na qual o desenvolvedor seleciona um modelo existente, como Gemini, realiza fine-tuning com dados adicionais e posteriormente disponibiliza sua versão personalizada para consumo via API.
+
+Essa interpretação está parcialmente correta, mas representa apenas uma parcela das capacidades da plataforma.
+
+O Vertex AI é uma plataforma abrangente de desenvolvimento, personalização, implantação e operação de soluções de Inteligência Artificial dentro do Google Cloud.
+
+Ele oferece recursos para trabalhar tanto com Machine Learning tradicional quanto com IA Generativa.
+
+## 4.1. Principais capacidades relevantes para a oportunidade
+
+**Vertex AI Studio**
+
+Ambiente para experimentar modelos, criar e testar prompts, ajustar parâmetros, definir instruções e validar respostas.
+
+**Model Garden**
+
+Catálogo de modelos do Google, parceiros e determinados modelos abertos, permitindo selecionar modelos de acordo com necessidades de negócio, qualidade, custo e desempenho.
+
+**Gemini**
+
+Modelos generativos do Google para interpretação de contexto, raciocínio, geração de conteúdo, análise de documentos e execução de tarefas.
+
+**Fine-tuning**
+
+Possibilidade de personalizar determinados modelos compatíveis utilizando conjuntos de dados de treinamento, ajustando comportamentos e desempenhos para tarefas específicas.
+
+**Embeddings e Vector Search**
+
+Geração de representações vetoriais e recuperação semântica de informações, permitindo localizar conteúdos relacionados pelo significado e não apenas por palavras-chave.
+
+**RAG Engine e Grounding**
+
+Recursos para conectar modelos generativos a fontes de conhecimento externas e fornecer informações contextualizadas durante a geração das respostas.
+
+**Agent Development Kit (ADK) e infraestrutura de agentes**
+
+Recursos para desenvolvimento e execução de agentes que podem utilizar ferramentas, acessar informações, executar tarefas e coordenar fluxos de trabalho.
+
+**Evaluation**
+
+Avaliação de modelos, prompts e aplicações, permitindo medir qualidade, aderência às fontes, desempenho e outros critérios.
+
+**Deployment e Monitoring**
+
+Disponibilização de modelos e aplicações, observabilidade, monitoramento, controle de acesso e operação em ambiente empresarial.
+
+## 4.2. Distinção entre as principais estratégias de adaptação de modelos
+
+É importante compreender a diferença entre:
+
+- Prompt Engineering: controlar comportamento e respostas por meio de instruções.
+- RAG: disponibilizar conhecimento externo ao modelo durante a consulta.
+- Fine-tuning: ajustar parâmetros do modelo utilizando dados de treinamento.
+- Model Training: desenvolver ou treinar modelos próprios para necessidades específicas.
+
+As escolhas de produto, interface e arquitetura conceitual do NEXUS estão centralizadas em Plano Nexus.txt. Este documento permanece dedicado ao histórico da oportunidade profissional e ao contexto geral de Vertex AI.
+
+---
